@@ -54,7 +54,7 @@ continue_renaming (){
   local extensions=('jpg' 'jpeg' 'png')
 
   for e in ${extensions[@]}; do
-    for i in $(command ls ${directory}/*.${e}); do
+    for i in $(command ls ${directory}/*.${e} 2>/dev/null); do
       local extract=$(basename ${i} ${e} | awk -F '_' '{print $1}')
       if [[ ${extract} != ${rename} ]]; then
         local rename_image=$(printf "${rename}_%02d.${e}" "${counter}")
