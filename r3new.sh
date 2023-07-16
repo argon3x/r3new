@@ -41,7 +41,7 @@ help_menu(){
   echo -e "${purple} -r, rename\t${end}Rename the pictures already renamed, no overwrite the name"
   echo -e "${end}\t\tor Add a new name to rename the pictures."
   echo -e "${purple} -h, help\t${end}Show the help menu."
-  echo -e "\n\t${green}./${0##*/}${end} -d [directory] <directory path> -n [new-name] <new name>\n"
+  echo -e "\n\t${green}./${0##*/}${end} -d [directory] <directory path> -r [new-name] <new name>\n"
   exit 0
 }
 
