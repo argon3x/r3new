@@ -1,19 +1,29 @@
-## r3new
+# r3new
 
-**This script will rename multimedia files among others, especially any type of images or videos.**
+# Description
 
-- Give permissions of execute to script
+This script will rename multimedia files among others, especially any type of images or videos. \
+by default it renames files to its own md5 hash (only 17 chars)
 
-        chmod u+x r3new.sh
+# Use
 
+* Give permissions of execute to script
 
-- For more information about the script, use the parameter **-h**
+```bash
+$ chmod 750 r3new.sh
+```
 
-        ./r3new.sh -h
+* For more information about the script, use the parameter `-h`
 
-- Run script
+```bash
+$ ./r3new.sh -h
+```
 
-        ./r3new.sh -d [path directory] -r [name/new-name]
+* Run script
+
+```bash
+$ ./r3new.sh -d [path directory] 
+```
 
 ### Sopported
 ![support](https://shields.io/badge/Supported%20on-Debian%20Based%20System%20and%20Termux-blue.svg?style=plastic)
