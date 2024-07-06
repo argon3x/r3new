@@ -1,5 +1,8 @@
 #!/bin/bash
-version='5.0.0'
+IFS='
+'
+
+version='5.0.1'
 
 # colors
 grn="\e[01;32m"
